@@ -7,7 +7,7 @@ test("adds 1 + 2 to equal 3", () => {
 });
 
 
-const server = http.createServer((req, res) => {
+const  = http.createServer((req) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
     res.end('Bonjour');
