@@ -1,9 +1,7 @@
 name: Running Code Coverage
 
-on:
-    pull_request:
-      branches:
-        - main
+on: [push, pull_request]
+
 jobs:
   build:
 
@@ -11,7 +9,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [ 15.x]
+        node-version: [12.x, 13.x, 14.x, 15.x]
 
     steps:
     - name: Checkout repository
